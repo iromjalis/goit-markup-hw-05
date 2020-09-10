@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия</title>
+    <title>Портфолио</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -16,8 +16,11 @@
                     <!--Логотип header-->
 
             <nav class="flex nav">
-                <a href="./index.html"><img src="./images/SVG/WebStudio.svg" alt="Логотип" class="logo"></a>
-
+                <a href="./index.html">
+                    <svg class="icon-WebStudio">
+                        <use href="./images/SVG/symbol-defs.svg#icon-WebStudio"></use>
+                    </svg>
+                </a>
                 <ul class="nav-list flex">
                     <li class="nav-list-item"><a href="./index.html" class="link ">
                         Студия</a></li>
@@ -123,12 +126,11 @@
         <div class="container flex">
         <!--адресс-->
             <div>
-            <a href="./index.html">
-                <img src="./images/Web-Studio-footer.png" alt="logo" class="footer-logo">
-                <!-- <svg class="icon-Web-Studio-footer" width="145px">
-                    <use href="./images/Web-Studio-footer.png"></use>
-                </svg> -->
-            </a>
+                <a href="./index.html">
+                    <svg class="icon-Web-Studio-footer">
+                        <use href="./images/SVG/symbol-defs.svg#icon-Web-Studio-footer"></use>
+                    </svg>
+                </a>
             <address>
                 <ul>
                     <li class="address map">г. Киев, пр-т Леси Украинки, 26</li>
@@ -140,36 +142,42 @@
         <!-- присоединяйтесь -->
             <div class="subscribe">
             <p class="footer-title">Присоединяйтесь</p>
-            <ul class="flex icon-list">
-                <li class="icon ">
-                    <a href="http://www.instagram.com"><svg class="icon-instagram">
-                        <use href="./images/SVG/symbol-defs.svg#icon-instagram" width="20px"></use>
-                    </svg></a>
+            <div class="container-social">
+                <ul class="social-list">
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-item-link-footer">
+                            <svg class="social-list_svg-footer">
+                                <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
     
-                </li>
-                <li class="icon">
-                    <a href="http://www.twitter.com">
-                    <svg class="icon-twitter" >
-                        <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-    
-                </li>
-                <li class="icon">
-                    <a href="http://www.facebook.com">
-                    <svg class="icon-facebook">
-                        <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-                </li>
-                <li class="icon">
-                    <a href="http://www.linkedin.com">
-                    <svg class="icon-linkedin">
-                        <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
-                </li>
-            </ul>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-item-link-footer">
+                            <svg class="social-list_svg-footer">
+                                <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-item-link-footer">
+                            <svg class="social-list_svg-footer">
+                                <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-item-link-footer">
+                            <svg class="social-list_svg-footer">
+                                <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+       
+        </div>
+    </div>
 
             </div>
         </div>
