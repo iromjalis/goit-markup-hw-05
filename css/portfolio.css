@@ -22,6 +22,7 @@ html{
   --address-color: #rgba(255, 255, 255, 0.6);
 }
 
+
 .logo{
   content:""
 }
@@ -188,7 +189,7 @@ main {
 }
 
 /* === PORTFOLIO ===*/
-.img-title{
+/* .img-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -198,24 +199,81 @@ main {
     padding-top: 20px;
     padding-bottom: 4px;
     margin: 0px auto;
-}
+} */
 
-.img-description{
+/* .img-description{
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-color);
-}
+} */
 
-.flex-container{
+/*ul*/
+.container-portfolio{
   display: flex;
   flex-wrap: wrap;
 }
 
+/*div для img+overlay-box+text */
+.box{
+position: relative;
+width: 370px;
+height: 294px;
+margin-left: auto;
+margin-right: auto;
+background-color: grey;
+
+overflow: hidden;
+}
+
+/*div для всплывающего описания */
+.overlay-box{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+background: rgba(33, 150, 243, 0.9);
+
+transform: translatey(100%);
+transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text{
+  padding: 63px 24px;
+  color: var(--white-color);
+}
+
+.box:hover .overlay-box{
+  transform: translatey(0);
+}
+
+.img-title{
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.img-descritpion{
+  display: flex;
+  padding-top: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  margin: 0;
+  color: var(--text-color);
+
+}
 .flex-element{
   width: 370px;
+  height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
 }
 
 .flex-element:hover,
