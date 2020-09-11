@@ -198,7 +198,6 @@ main {
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
-outline: 1px solid red;
 }
 
 .container-portfolio{
