@@ -239,6 +239,11 @@ body {
 .text{
   padding: 63px 24px;
   color: white;
+
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+
 }
 
 .box:hover .overlay-box{
