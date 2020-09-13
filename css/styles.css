@@ -179,7 +179,7 @@ header .flex.container{
 
 /* === END HEADER ===*/
 
-/* ===  ћќƒјЋ№Ќќ≈ ќ Ќќ ===*/
+/* ===  –Ь–Ю–Ф–Р–Ы–ђ–Э–Ю–Х –Ю–Ъ–Э–Ю ===*/
 .backdrop{
   position: fixed;
   top: 0;
@@ -190,7 +190,7 @@ header .flex.container{
   background-color: rgba(128, 128, 128, 0.5);
 }
 .backdrop.is-hidden{
-  /* должен быть 0 - прозрачный*/
+  /* –і–Њ–ї–ґ–µ–љ –±—Л—В—М 0 - –њ—А–Њ–Ј—А–∞—З–љ—Л–є*/
   opacity: 0; 
   pointer-events: none;
 }
@@ -220,10 +220,12 @@ header .flex.container{
   padding: 6px;
   margin: 14px;
 }
-/* ===   ќЌ≈÷ ћќƒјЋ№Ќќ√ќ ќ Ќј  ===*/
+/* ===  –Ъ–Ю–Э–Х–¶ –Ь–Ю–Ф–Р–Ы–ђ–Э–Ю–У–Ю –Ю–Ъ–Э–Р  ===*/
+
 
 /* === HERO ===*/
-.hero-title{
+
+.hero-title {
   width: 696px;
   margin: auto auto;
   font-weight: 900;

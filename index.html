@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -51,7 +51,7 @@
         </div>
     </header>
 
-	<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <a href="" data-modal-close>
             <img class="close" src="./images/SVG/close-black.svg" alt="">
@@ -62,9 +62,9 @@
     <!-- Главный контент страницы-->
     <main >
         <!--Герой-->
-        <section class="hero">
+        <section class="hero container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </section>
        
 
@@ -413,6 +413,7 @@
             </form>
         </div> -->
     </footer>
-<script src="./jc/modal.js"></script>
+    /*javascript для модалки*/
+    <script src="./jc/modal.js"></script>
 </body>
 </html>
