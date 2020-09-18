@@ -1,6 +1,7 @@
 
 transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
+
 *,
 *::before,
 **::after, {
@@ -8,10 +9,9 @@ transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   margin: 0;
 }
 
-button,
-*:focus{
+button:focus{
   cursor: pointer;
-  background-color: transparent;
+  outline: none;
 }
 link{
   text-decoration: none;
