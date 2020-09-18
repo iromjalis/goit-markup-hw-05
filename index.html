@@ -51,12 +51,90 @@
         </div>
     </header>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <a href="" data-modal-close>
+            <img class="close" src="./images/SVG/close-black.svg" alt="крест">
+            </a>
+
+            <!--   Форма в модалке   -->
+            <form class="group">
+                <h2 class="group-title">Оставьте свои данные, мы вам перезвоним</h2>
+                        <p class="group-title-item">Имя</p>
+                    <label for="" class="form-field">
+                        <input 
+                        type="text" 
+                        class="form-input"
+                        name="name" 
+                        placeholder=" ">
+                        <span class="form-label">Имя</span>
+                        <svg class="icon" width="12px">
+                            <use href="./images/SVG/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </label>
+
+                    <p class="group-title-item">Телефон</p>
+                    <label for="" class="form-field">
+                        <input 
+                        type="tel" 
+                        class="form-input"
+                        name="name" 
+                        placeholder=" ">
+                        <span class="form-label">Телефон</span>
+                        <svg class="icon" width=" 13px">
+                            <use href="./images/SVG/symbol-defs.svg#icon-trubka"></use>
+                        </svg>
+                    </label>
+
+                    <p class="group-title-item">Почта</p>
+                    <label for="" class="form-field">
+                        <input 
+                        type="mail" 
+                        class="form-input"
+                        name="name" 
+                        placeholder=" ">
+                        <span class="form-label">Почта</span>
+                        <svg class="icon" width=" 15px" height="12px">
+                            <use href="./images/SVG/symbol-defs.svg#icon-envelope-black"></use>
+                        </svg>
+                    </label>
+
+                    <p class="group-title-item">Комментарий</p>
+                    <label for="" class="form-field">
+                        <textarea
+                        class="textarea-input"
+                        name="comment"
+                        rows="5"
+                        cols="45"
+                        placeholder=" "
+                        ></textarea>
+                        <span class="form-label text">Введите текст</span>
+                    </label>
+                    
+                    <label class="label">
+                    <input class="checkbox" name="topic" type="checkbox" value="contract-title" />
+                     Соглашаюсь с рассылкой и принимаю 
+                     <a href="" class="contract">
+                         <u>Условия договора</u>
+                    </a>
+                    <span class="checkbox-icon"></span>
+                    </label>
+
+
+
+                         <button submit="submit" class="send-btn">Отправить</button>
+                         <br>
+            </form>
+
+        </div>
+    </div>
+
     <!-- Главный контент страницы-->
     <main >
         <!--Герой-->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open >Заказать услугу</button>
         </section>
        
 
@@ -65,23 +143,19 @@
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="features-list flex">
             <li class="features-list-item ">
-<!--                 <img src="./images/Vector1.png" alt="тарелка">
- -->                    <p class="title"> Внимание к деталям </p>
+                   <p class="title"> Внимание к деталям </p>
                     <p class="title-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="features-list-item">
-<!--                 <img src="./images/Vector2.png" alt="часы">
- -->                    <p class="title">Пунктуальность</p>
+                    <p class="title">Пунктуальность</p>
                     <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="features-list-item">
-<!--                 <img src="./images/Vector3.png" alt="комп">
- -->                <p class="title">Планирование</p>
+                <p class="title">Планирование</p>
                 <p class="title-text">Равным образом консультации с широким активом в значительной степени обуславливает.</p>
         </li>
             <li class="features-list-item">
-<!--                 <img src="./images/Vector4.png" alt="космонавт">
- -->                <p class="title">Современные технологии</p>
+                <p class="title">Современные технологии</p>
                 <p class="title-text">Значимость этих проблем настолько очевидна, что реализация плановых зажаний.</p>
         </li>
         </ul>
@@ -93,21 +167,21 @@
         <ul class=" works-list flex">
             <li class="works-list-item">
                 <a href="" class="works-img">
-                    <img src="./images/works/photo1.jpg" alt="лаптоп" width="370" height="294" >
-<!--                     <span>Десктопные приложения</span>
- -->                </a>
+                    <img src="./images/photo1.jpg" alt="лаптоп" width="370" height="294" >                
+                    <span class="works-title">Десктопные приложения</span>
+                 </a>
             </li>
             <li class="works-list-item">
                 <a href="" class="works-img">
-                    <img src="./images/works/photo2.jpg" alt="тел"  width="370" height="294">
-<!--                     <span>Мобильные приложения</span>
- -->                </a>
+                    <img src="./images/photo2.jpg" alt="тел"  width="370" height="294">
+                   <span class="works-title">Мобильные приложения</span>
+                 </a>
             </li>
             <li class="works-list-item">
                 <a href="" class="works-img">
-                    <img src="./images/works/photo3.jpg" alt="экран"  width="370" height="294">
-<!--                     <span>Дизайнерские решения</span>
- -->                </a>
+                    <img src="./images/photo3.jpg" alt="экран"  width="370" height="294">
+                    <span class="works-title">Дизайнерские решения</span>
+                 </a>
             </li>
         </ul>
     </section>
@@ -120,7 +194,7 @@
         <ul class=" team flex">
             <!--Николай Кучеренко-->
             <li class="team-list-item">
-                <img src="./images/our-team/photo1.1.jpg" alt="парень в синей рубашке" width="270" height="260">
+                <img src="./images/photo1.jpg" alt="парень в синей рубашке" width="270" height="260">
                 <h3 class="team name">Николай Кучеренко</h3>
                 <h4 class="team profession">Product Designer</h4>
                 <div class="container-social-team">
@@ -160,7 +234,7 @@
 
             <!--Андрей Шевченко-->
             <li class="team-list-item">
-                <img src="./images/our-team/photo1.2.jpg" alt="девушка в черном пиджаке" width="270" height="260">
+                <img src="./images/photo1.2.jpg" alt="девушка в черном пиджаке" width="270" height="260">
                 <h3 class="team name">Ольга Репина</h3>
                 <h4 class="team profession">Frontend Developer</h4>
                 <div class="container-social-team">
@@ -201,7 +275,7 @@
 
             <!--Андрей Шевченко-->
             <li class="team-list-item">
-                <img src="./images/our-team/photo1.3.jpg" alt="парень в футболке серой" width="270" height="260">
+                <img src="./images/photo1.3.jpg" alt="парень в футболке серой" width="270" height="260">
                 <h3 class="team name">Андрей Шевченко</h3>
                 <h4 class="team profession">Marketing</h4>
                 <div class="container-social-team">
@@ -241,7 +315,7 @@
 
             <!--Иван Николаев-->
             <li class="team-list-item">
-                <img src="./images/our-team/photo1.4.jpg" alt="парень в футболке белой" width="270" height="260">
+                <img src="./images/photo1.4.jpg" alt="парень в футболке белой" width="270" height="260">
                 <h3 class="team name">Иван Николаев</h3>
                 <h4 class="team profession">UI Designer</h4>
                 <div class="container-social-team">
@@ -395,19 +469,36 @@
                         </li>
                     </ul>
                 </div>
-           
             </div>
-        </div>
-        <!--
-        Подпишись на рассылку
-        <div>
-            <strong>Подпишись на рассылку</strong>
-            <form action="">
-                <input type="email" name="Email" value="email" >
-                <input type="submit" value="Подписаться"> 
-                <img src="./images/samoletik.png" alt="самолетик">
+
+            <!-- Подпишись на рассылку -->
+        <div class="subscription">
+            <strong>Подпишитесь на рассылку</strong>
+
+                <div class="subscription-form">
+                            <input 
+                                class="colortext"
+                                type="email" 
+                                name="mail" 
+                                id="email" 
+                                autocomplete="on"
+                                placeholder="E-mail" 
+                                />
+                            <label for="mail" class="sub">
+                                <a href="" class="sub hero-btn">
+                                    Подписаться
+                                    <img src="./images/SVG/twitter-footer.png" alt="лого твиттера" width="24" height="24">
+
+                                </a>
+                            </label>
+
+                        </div>
             </form>
-        </div> -->
+        </div> 
+    </div>
+        </div>
+        
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
