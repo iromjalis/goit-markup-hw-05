@@ -165,6 +165,7 @@ header .flex.container{
   height: 12px;
   background-color: var(--header-bg);
   margin-right: 10px;
+  align-items: center;
 }
 
 .icon-tel{
