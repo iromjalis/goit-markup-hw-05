@@ -23,8 +23,8 @@
                 <ul class="site-nav flex">
                     <li class="list"><a href="./index.html" class="link current" target="_blank"
                             rel="noopener noreferrer">Cтудия</a></li>
-                    <li class="list"><a href="./portfolio.html" class="link" target="_blank"
-                            rel="noopener noreferrer">Портфолио</a></li>
+                    <li class="list"><a href="./portfolio.html" class="link" rel="noopener noreferrer">Портфолио</a>
+                    </li>
                     <li class="list"><a href="#contacts" class="link" target="_blank"
                             rel="noopener noreferrer">Контакты</a></li>
                 </ul>
@@ -47,27 +47,94 @@
     </header>
 
     <main>
+        <!--Модальное окно-->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="pop-ups">
+                <div class="modal">
+                    <a href="" data-modal-close>
+                        <img class="close" src="./images/SVG/close-black.svg" alt="крест">
+                    </a>
+
+                    <!--   Форма в модалке   -->
+                    <form class="group visually-hidden">
+                        <h2 class="group-title">Оставьте свои данные, мы вам перезвоним</h2>
+                        <p class="group-title-item">Имя</p>
+                        <label for="" class="form-field">
+                            <input type="text" class="form-input" name="name" placeholder=" ">
+                            <span class="form-label">Имя</span>
+                            <svg class="icon" width="12px">
+                                <use href="./images/SVG/symbol-defs.svg#icon-person"></use>
+                            </svg>
+                        </label>
+
+                        <p class="group-title-item">Телефон</p>
+                        <label for="" class="form-field">
+                            <input type="tel" class="form-input" name="name" placeholder=" ">
+                            <span class="form-label">Телефон</span>
+                            <svg class="icon" width=" 13px">
+                                <use href="./images/SVG/symbol-defs.svg#icon-trubka"></use>
+                            </svg>
+                        </label>
+
+                        <p class="group-title-item">Почта</p>
+                        <label for="" class="form-field">
+                            <input type="mail" class="form-input" name="name" placeholder=" ">
+                            <span class="form-label">Почта</span>
+                            <svg class="icon" width=" 15px" height="12px">
+                                <use href="./images/SVG/symbol-defs.svg#icon-envelope-black"></use>
+                            </svg>
+                        </label>
+
+                        <p class="group-title-item">Комментарий</p>
+                        <label for="" class="form-field">
+                            <textarea class="textarea-input" name="comment" rows="5" cols="45"
+                                placeholder=" "></textarea>
+                            <span class="form-label text">Введите текст</span>
+                        </label>
+
+                        <label class="label">
+                            <input class="checkbox" name="topic" type="checkbox" value="contract-title" />
+                            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+
+                            </span>
+
+                            <a href="" class="contract">
+                                <u>Условия договора</u>
+                            </a>
+                            <span class="checkbox-icon"></span>
+                        </label>
+
+                        <button submit="submit" class="send-btn">Отправить</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
         <section class="hero-section">
             <div class="hero container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-btn">Заказать услугу</button>
+                <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
         <!--Чем можем похвастаться-->
         <section class="features-section">
-            <h2 hidden class="heading">Особенности</h2>
+            <h2 class="heading visually-hidden">Особенности</h2>
             <div class="features container">
                 <ul class="features-list">
                     <li class="features-item">
                         <h3 class="title"> Внимание к деталям </h3>
-                        <p class="title-text">Идейные соображения, а также начало повседневной работы по формированию
+                        <p class="title-text">Идейные соображения, а также начало повседневной работы по
+                            формированию
                             позиции.</p>
                     </li>
                     <li class="features-item">
 
                         <h3 class="title">Пунктуальность</h3>
-                        <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров влечет
+                        <p class="title-text">Задача организации, в особенности же рамки и место обучения кадров
+                            влечет
                             за собой.</p>
                     </li>
                     <li class="features-item">
@@ -412,6 +479,8 @@
         </div>
 
     </footer>
+    <script src="./jc/modal.js"></script>
+
 </body>
 
 </html>

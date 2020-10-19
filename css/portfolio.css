@@ -89,6 +89,10 @@ a {
   border: 1px solid transparent;
 
   padding: 6px 22px;
+
+  transition-duration: 250ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:not(:last-child) {
   margin-right: 8px;
@@ -137,6 +141,10 @@ a {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   text-align: left;
+
+  transition-duration: 250ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-element:nth-child(3n) {
